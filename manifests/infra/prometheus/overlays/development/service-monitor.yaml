@@ -1,4 +1,4 @@
-apiVersion: monitoring.coreos.com/v1
+aiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
   name: prometheus-metrics
@@ -29,5 +29,4 @@ spec:
     - dreamkast-staging
   selector:
     matchLabels:
-      app: dreamkast
-      tier: dreamkast
+      argocd.argoproj.io/instance: dreamkast-staging-main
